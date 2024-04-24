@@ -1,9 +1,58 @@
 h1,
 footer {
   text-align: center;
-
-  font-weight: 400;
 }
 body {
   font-family: "Atkinson Hyperlegible", sans-serif;
+  background-image: url(/src/clock.jpg);
+  background-size: contain;
+}
+.app-container {
+  background-color: rgba(246, 234, 196, 0.8);
+  border: solid 1px black;
+  padding: 10px 25px;
+}
+.app-container,
+footer {
+  width: 500px;
+  margin: 50px auto;
+  border-radius: 4px;
+}
+select {
+  border-radius: 4px;
+  background-color: rgba(137, 95, 60, 0.9);
+  color: white;
+  padding: 4px 10px;
+  width: 100%;
+}
+h1 {
+  font-family: "Jersey 20 Charted", sans-serif;
+  font-size: 50px !important;
+  text-transform: uppercase;
+}
+
+h2 .city {
+  margin: 0;
+  font-size: 30px !important;
+}
+div .date {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+div .time {
+  font-size: 38px;
+  vertical-align: center;
+  font-weight: bold;
+}
+.row {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+}
+.row:last-child {
+  border-bottom: none;
+}
+
+footer {
+  font-size: 13px;
+  background-color: rgba(246, 234, 196, 0.9);
 }

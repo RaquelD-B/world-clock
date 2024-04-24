@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+20+Charted&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+25&display=swap"
       rel="stylesheet"
@@ -20,19 +26,36 @@
   </head>
   <body>
     <div class="app-container">
-      <h1>World clock</h1>
+      <h1>🕧 World clock 🕜</h1>
       <select name="" id="">
         <option value="">Select a city</option>
         <option value="new york">New York</option>
         <option value="dubai">Dubai</option>
         <option value="Pekin">Pekin</option>
       </select>
-      <h2>Los Angeles</h2>
-      <div class="date">April 24th, 2024</div>
-      <div class="time">10:23 PM</div>
-      <h2>Berlin</h2>
-      <div class="date">April 24th, 2024</div>
-      <div class="time">10:23 PM</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h2 class="city">Los Angeles</h2>
+            <div class="date">April 24th, 2024</div>
+          </div>
+          <div class="col-6"><div class="time">10:23 PM</div></div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h2 class="city">Tokyo</h2>
+            <div class="date">April 24th, 2024</div>
+          </div>
+          <div class="col-6"><div class="time">10:23 AM</div></div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h2 class="city">Paris</h2>
+            <div class="date">April 24th, 2024</div>
+          </div>
+          <div class="col-6"><div class="time">07:23 PM</div></div>
+        </div>
+      </div>
     </div>
     <footer>
       This project was coded by
