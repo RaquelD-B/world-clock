@@ -70,7 +70,7 @@ footer a {
 
 @media (max-width: 480px) {
   .app-container {
-    margin: 100px auto 10px auto;
+    margin: 100px 10px 5px 10px;
   }
   .app-container,
   footer {
