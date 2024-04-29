@@ -31,17 +31,22 @@ function updateTime() {
 
 function displayTime(event) {
   let time = document.querySelector("#city");
-  let timeData = moment.tz(event.target.value);
-  let cityName = event.target.value.replace("_", " ").split("/")[1];
+  let timeZone = event.target.value;
+  if (timeZone === "current") {
+    timeZone = moment.tz.guess();
+  }
+  let cityName = timeZone.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(timeZone);
+
   time.innerHTML = `
     <div class="container">
           <div class="row">
             <div class="col-6">
               <h2 class="city"> ${cityName} </h2>
-              <div class="date">${timeData.format("MMMM Do, YYYY")} </div>
+              <div class="date">${cityTime.format("MMMM Do, YYYY")} </div>
             </div>
             <div class="col-6">
-              <div class="time"> ${timeData.format(
+              <div class="time"> ${cityTime.format(
                 "hh:mm:ss [<small>]A[</small>]"
               )}
               </div>
