@@ -52,6 +52,7 @@ function displayTime(event) {
               </div>
             </div>
           </div>
+          <a href="/index.html">Back to all cities</a>
           </div>
 
  `;

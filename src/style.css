@@ -55,6 +55,10 @@ div .time small {
   border-bottom: none;
 }
 
+a {
+  color: black !important;
+  font-weight: bold;
+}
 footer {
   font-size: 13px;
   background-color: rgba(246, 234, 196, 0.9);
