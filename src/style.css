@@ -68,13 +68,16 @@ footer a {
   color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .app-container {
     margin: 100px auto 10px auto;
   }
   .app-container,
   footer {
     max-width: 80%;
+  }
+  select {
+    font-size: 13px !important;
   }
   h1 {
     font-size: 34px !important;
@@ -84,7 +87,7 @@ footer a {
     margin-bottom: 0 !important;
   }
   div .date {
-    font-size: 12px;
+    font-size: 10px;
   }
   div .time {
     font-size: 22px;
