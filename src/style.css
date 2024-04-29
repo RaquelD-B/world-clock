@@ -67,3 +67,32 @@ footer a {
   font-weight: bold;
   color: black;
 }
+
+@media (max-width: 768px) {
+  .app-container {
+    margin: 100px auto 10px auto;
+  }
+  .app-container,
+  footer {
+    max-width: 80%;
+  }
+  h1 {
+    font-size: 34px !important;
+  }
+  h2 {
+    font-size: 20px !important;
+    margin-bottom: 0 !important;
+  }
+  div .date {
+    font-size: 12px;
+  }
+  div .time {
+    font-size: 22px;
+  }
+  div .time small {
+    font-size: 12px;
+  }
+  footer {
+    font-size: 10px;
+  }
+}
